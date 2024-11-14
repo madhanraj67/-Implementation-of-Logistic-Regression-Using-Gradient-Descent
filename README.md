@@ -8,16 +8,13 @@ To write a program to implement the the Logistic Regression Using Gradient Desce
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-step 1: Initialize Parameters: Start by initializing the parameters (weights) theta with random values or zeros.
-
-step 2:  Compute Sigmoid Function: Define the sigmoid function that maps any real-valued number to a value between 0 and 1.
-
-step 3:  Compute Loss Function: Define the loss function, which measures the error between the predicted output and the actual output.
-
-step 4: Gradient Descent Optimization: Implement the gradient descent algorithm to minimize the loss function. In each iteration, compute the gradient of the loss function with respect to the parameters (theta), and update the parameters in the opposite direction of the gradient to minimize the loss.
-
-step 5:Iterate Until Convergence: Repeat the gradient descent steps for a predefined number of iterations or until convergence criteria are met. Convergence can be determined when the change in the loss function between iterations becomes very small or when the parameters (theta) stop changing significantly.
-
+1. Load pandas, numpy, and matplotlib for data handling, computation, and visualization.
+2. Read the dataset (Placement_Data.csv).Drop unnecessary columns (sl_no, salary).
+3. Convert categorical variables to numerical codes using .astype('category') and .cat.codes.
+4. Sigmoid Function: Compute probabilities using ℎ(𝑧)=11+𝑒−𝑧h(z)= 1/1+e −z.
+5. Initialize random weights (theta) and use gradient_descent() to optimize weights over multiple iterations.
+6. Compute accuracy by comparing predicted values (y_pred) with actual values (Y).
+7. Print accuracy, predictions for the dataset, and predictions for new inputs.
 ## Program:
 ```
  Program to implement the the Logistic Regression Using Gradient Descent.
